@@ -17,7 +17,7 @@ RUN apt install apt-transport-https -y
 
 RUN apt-get update
 
-RUN apt install dotnet-sdk-3.0 -y
+RUN apt install reinstall dotnet-sdk-3.0 -y
 
 COPY ./ ./
 
@@ -27,4 +27,4 @@ RUN dotnet build
 
 EXPOSE 5000:5000
 
-CMD [ "dotnet", "run", "test" ]
+CMD [ "dotnet", "run" ]

@@ -17,7 +17,7 @@ RUN apt install apt-transport-https -y
 
 RUN apt-get update
 
-RUN apt install reinstall dotnet-sdk-3.0 -y
+RUN apt-get install dotnet-sdk-3.0 -y
 
 COPY ./ ./
 
